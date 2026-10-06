@@ -25,3 +25,5 @@ SolverTable add-in
 Python starts massively outperforming a manually configured spreadsheet.
 
 one recipe → every SKU
+
+based on Winston book
