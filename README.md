@@ -6,6 +6,9 @@ Given three specified points on the demand curve (SKU-level price/demand estimat
 
 profit=demand*(price-unit_cost)
 
+Fitting:np.polyfit
+Optimization:minimize_scalar
+
 "For the quadratic demand model to be useful, the minimum and maximum prices must be consistent with consumer preferences. A knowledgeable sales force should be able to come up with realistic minimum and maximum prices."
 
 easily price hundreds or thousands of products
