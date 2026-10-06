@@ -4,7 +4,7 @@ Given three price/demand estimates on the demand curve, how do we determine a pr
 
 # Model Features
 
-* Input: Sales team provides estimates
+* Input: Sales team provides 3 estimates (low price, med price, high price)
 
 * Demand-curve fitting: numpy.polyfit
 
