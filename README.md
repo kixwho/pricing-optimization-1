@@ -1,3 +1,6 @@
+<img width="838" height="106" alt="image" src="https://github.com/user-attachments/assets/b9868602-ead6-4d3a-9320-14e855ab77fb" />
+
+
 # Business Problem
 
 Given three price/demand estimates on the demand curve, how do we determine a profit-maximizing price?
@@ -49,5 +52,6 @@ While this demand model only considers one predictor (i.e. price), it provides a
 
 Using this automated model, it is easy to price hundreds of thousands of products without ever having to manually copy/pasting values across worksheets.
 
+<br>
 
-based on Winston book
+📗 Based on _Microsoft Excel 2016 Data Analysis and Business Modeling_ by Wayne L. Winston
