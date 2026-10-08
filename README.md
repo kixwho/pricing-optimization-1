@@ -55,7 +55,7 @@ While this demand model only considers one predictor (i.e. price), its simplicit
 
 More sophisticated demand models could incorporate factors such as competitor pricing, promotions, or seasonality, but this approach provides a lightweight starting point and a good estimate to the ground truth.
 
-Using this automated model, it is easy to price hundreds of thousands of products without ever having to manually copy-pasting values across worksheets.
+Using this automated model, it is easy to price hundreds of thousands of products without ever having to manually copy-paste values across worksheets.
 
 <br>
 
