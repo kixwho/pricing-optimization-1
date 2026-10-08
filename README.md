@@ -1,4 +1,4 @@
-<img width="794" height="106" alt="image" src="https://github.com/user-attachments/assets/f8d61858-f6e2-4afd-8ef2-3d6c4da45240" />
+<img width="830" height="106" alt="image" src="https://github.com/user-attachments/assets/0662bfda-119e-47c5-aca2-26104ab61670" />
 
 # Business Problem
 
