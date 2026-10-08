@@ -16,10 +16,14 @@ Given three price/demand estimates on the demand curve, how do we determine a pr
 
 <img width="274" height="146" alt="image" src="https://github.com/user-attachments/assets/b1f22c0e-4be8-4fb0-8252-76eb24713a16" />
 
+<br>
+<br>
+
+* Methodology: Adapted from Chapter 86 of Wayne L. Winston's _Microsoft Excel 2016 Data Analysis and Business Modeling_, which demonstrates pricing a product using subjectively determined demand estimates. I translated the Excel approach into Python and extended it to optimize multiple SKUs automatically.
 
 # Solution
 
-Traditionally this type of problem is done in Excel using SolverTable add-in. It's what I was taught in business school. But Excel isn't built for automation, Python is. We go from input:
+Traditionally, this type of problem is done in Excel using SolverTable add-in. It's what I was taught in business school. But Excel isn't built for automation, Python is. We go from input:
 
 <img width="798" height="183" alt="image" src="https://github.com/user-attachments/assets/be62ef43-58d7-4f63-b890-a0a28d3df284" />
 
@@ -42,15 +46,17 @@ result = minimize_scalar(
 
 **About the Quadratic Demand Model**
 
-For this model to be useful, the minimum and maximum prices need to be consistent with consumer preferences. So we need a knowledgeable sales force to come up with realistic minimum and maximum prices/demands.
+For this model to be useful, the minimum and maximum prices need to be consistent with consumer preferences. So we need a knowledgeable sales force to come up with realistic low and high price/demand cutoffs.
 ```
 Demand = a (price)^2 + b (price) + c
 ```
 
-While this demand model only considers one predictor (i.e. price), it provides a good estimate to the true demand curve when we don't know the price elasticity, or if linear/power demand curve aren't suitable. The simplicity of this model can be its strength, because we can easily buttress the model by adding more price/demand estimates to get a better fit.
+While this demand model only considers one predictor (i.e. price), its simplicity can be an advantage when a quick, transparent pricing estimate is more useful than a complex model. The quadratic form can capture curvature that a linear model cannot, and we can easily input more price/demand estimates to produce a more robust fit (3 is just the minimum needed!).
 
-Using this automated model, it is easy to price hundreds of thousands of products without ever having to manually copy/pasting values across worksheets.
+More sophisticated demand models could incorporate factors such as competitor pricing, promotions, or seasonality, but this approach provides a lightweight starting point and a good estimate to the ground truth.
+
+Using this automated model, it is easy to price hundreds of thousands of products without ever having to manually copy-pasting values across worksheets.
 
 <br>
 
-📗 Based on _Microsoft Excel 2016 Data Analysis and Business Modeling_ by Wayne L. Winston
+📗 Based on _Microsoft Excel 2016 Data Analysis and Business Modeling_ by Wayne L. Winston, Chapter 86, "Pricing products by using subjectively determined demand"
